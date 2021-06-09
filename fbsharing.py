@@ -12,7 +12,7 @@ driver = webdriver.Chrome(PATH)
 
 driver.get("https://www.facebook.com/")
 
-username = driver.find_element_by_css_selector(".inputtext._55r1._6luy._9npi")
+username = driver.find_element_by_id("email")
 username.send_keys("Username")   #Enter your fb username 
 time.sleep(2)
 password = driver.find_element_by_id("pass")
